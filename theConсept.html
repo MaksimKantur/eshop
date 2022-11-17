@@ -22,6 +22,7 @@
     </div>
 </header>
 <nav>
+
     <nav class="navMenu">
         <a href="#">Home</a>
         <a href="#">Blog</a>
@@ -32,6 +33,22 @@
 </nav>
 
 <body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close">
+    </label>
+    <div class="wrapper">
+        <ul>
+            <!-- navigation vertical menu-->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </div>
+
+
     <div class="sticky-toolbar-container">
         <!-- you can see how to make it here : https://webdesign.tutsplus.com/tutorials/how-to-create-a-sticky-toolbar-with-css-and-javascript--cms-40630 -->
         <button aria-label="open toolbar" type="button" class="open-toolbar toggle-toolbar">
@@ -98,6 +115,9 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Oswald', sans-serif;
     }
 
     header {
@@ -146,11 +166,9 @@
 
     @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
-    * {
-        margin: 0;
-        padding: 0;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
+    body {
+
+        font-family: "Montserrat", sans-serif;
     }
 
     body {
@@ -168,7 +186,7 @@
     }
 
     .navMenu a {
-        color: var(--mocha);
+        color: var(--darkgrey);
         text-decoration: none;
         font-size: 1.2em;
         text-transform: uppercase;
@@ -237,16 +255,16 @@
 
 
     :root {
-        --whip: #decbb1;
-        --cream: #b69b7d;
-        --caramel: #8f614b;
-        --mocha: rgb(105, 105, 105);
-        --black: #070502;
+    
+        --white: #F7F2EF;
+        --lightgrey: #e7e3e2;
+        --darkgrey: #aba6a1;
+        --black: #2f2e2c;
     }
 
     button {
         cursor: pointer;
-        background: none;
+        background: white;
         border: none;
     }
 
@@ -270,7 +288,7 @@
     }
 
     .sticky-toolbar-container .toggle-toolbar {
-        background: var(--cream);
+        background: var(--lightgrey);
     }
 
     .sticky-toolbar-container .toggle-toolbar.open-toolbar {
@@ -304,7 +322,7 @@
     .sticky-toolbar-container .sticky-toolbar a {
         position: relative;
         margin-bottom: 1px;
-        background: var(--whip);
+        background: var(--white);
     }
 
     .sticky-toolbar-container .sticky-toolbar a::before,
