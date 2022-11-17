@@ -9,16 +9,16 @@
 <header>
     <div class="logo">
         <span style="--i:1">T</span>
-        <span style="--i:2">H</span>
+        <span style="--i:1">H</span>
+        <span style="--i:1">E</span>
+        <span style="--i:2"> </span>
+        <span style="--i:3">C</span>
+        <span style="--i:3">O</span>
+        <span style="--i:3">N</span>
+        <span style="--i:3">C</span>
         <span style="--i:3">E</span>
-        <span style="--i:4"> </span>
-        <span style="--i:5">C</span>
-        <span style="--i:6">O</span>
-        <span style="--i:7">N</span>
-        <span style="--i:8">C</span>
-        <span style="--i:9">E</span>
-        <span style="--i:10">P</span>
-        <span style="--i:10">T</span>
+        <span style="--i:3">P</span>
+        <span style="--i:3">T</span>
     </div>
 </header>
 <nav>
@@ -75,13 +75,10 @@
             </button>
         </div>
     </div>
-
-    <footer class="page-footer">
-
-    </footer>
-
 </body>
-
+<footer>
+    <p>test</p>
+</footer>
 </html>
 <style>
     /* header:hover {
@@ -157,6 +154,7 @@
     }
 
     body {
+        height: 2000px;
         background: #272727;
         font-family: "Montserrat", sans-serif;
     }
@@ -188,7 +186,7 @@
     .navMenu .dot {
         width: 6px;
         height: 6px;
-        background: #fddb3a;
+        background: black;
         border-radius: 50%;
         opacity: 0;
         -webkit-transform: translateX(30px);
@@ -229,20 +227,6 @@
         opacity: 1;
     }
 
-    .subbox {
-        margin-top: 60px;
-        float: left;
-        position: relative;
-        left: 300%;
-        width: 100px;
-        font-size: 14px;
-        font-family: barlow condensed, sans-serif;
-        list-style-type: none;
-        text-decoration: none;
-        color: rgb(51, 149, 82);
-        display: inline;
-    }
-
     .subbox:hover {
         float: left;
         color: rgb(212, 151, 151);
@@ -256,7 +240,7 @@
         --whip: #decbb1;
         --cream: #b69b7d;
         --caramel: #8f614b;
-        --mocha: #382a1d;
+        --mocha: rgb(105, 105, 105);
         --black: #070502;
     }
 
@@ -371,20 +355,15 @@
 
     /* FOOTER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .page-footer {
-        position: fixed;
-        right: 0;
-        bottom: 50px;
-        display: flex;
-        align-items: center;
-        padding: 5px;
-        z-index: 1;
-    }
-
-    .page-footer a {
-        display: flex;
-        margin-left: 4px;
-    }
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: black;
+   text-align: center;
+}
 </style>
 <script>
     const toggleToolbar = document.querySelectorAll(".toggle-toolbar");
