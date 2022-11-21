@@ -24,10 +24,10 @@
 <nav>
 
     <nav class="navMenu">
-        <a href="#">Home</a>
-        <a href="#">Blog</a>
-        <a href="#">Work</a>
-        <a href="#">About</a>
+        <a href="#"><a href="section 1">Home</a></a>
+        <a href="#"><a href="section2">Blog</a></a>
+        <a href="#"><a href="section3">Work</a></a>
+        <a href="#"><a href="section4">About</a></a>
         <div class="dot"></div>
     </nav>
 </nav>
@@ -93,13 +93,25 @@
         </div>
     </div>
 </body>
+<div class="home" style="position:relative; left: 0px; top: 600px" id="section1">
+    <h1>Home</h1>
+</div>
+<div class="blog" style="position:relative; left: 0px; top: 600px" id="section2">
+    <h1>Blog</h1>
+</div>
+<div class="work" style="position:relative; left: 0px; top: 600px" id="section3">
+    <h1>Work</h1>
+</div>
+<div class="about" style="position:relative; left: 0px; top: 600px" id="section4">
+    <h1>About</h1>
+</div>
 <footer>
     <p>test</p>
 </footer>
 
 </html>
 <style>
-    /* header:hover {
+    /* header:{
         animation-duration: 3s;
         animation-name: heading;
         /* animation-iteration-count: infinite;
@@ -120,6 +132,25 @@
         font-family: 'Lato', sans-serif;
         font-family: 'Oswald', sans-serif;
     }
+    html{
+        scroll-behavior: smooth;
+    }
+    #section1 {
+        height: 600px;
+        background-color: green;
+    }
+    #section2 {
+        height: 600px;
+        background-color: gold;
+    }
+    #section3 {
+        height: 600px;
+        background-color: coral;
+    }
+    #section4 {
+        height: 600px;
+        background-color: gray;
+    }
 
     header {
         background-color: #151719;
@@ -139,6 +170,7 @@
         position: relative;
         -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
         font-size: 27px;
+        
     }
 
     .logo span {
@@ -147,12 +179,12 @@
         display: inline-block;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
-        animation: waviy 1s;
+        animation: wavy 1s;
         animation-delay: calc(.1s * var(--i));
 
     }
 
-    @keyframes waviy {
+    @keyframes wavy {
 
         0%,
         40%,
