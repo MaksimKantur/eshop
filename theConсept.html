@@ -24,10 +24,10 @@
 <nav>
 
     <nav class="navMenu">
-        <a href="#"><a href="section 1">Home</a></a>
-        <a href="#"><a href="section2">Blog</a></a>
-        <a href="#"><a href="section3">Work</a></a>
-        <a href="#"><a href="section4">About</a></a>
+        <a href="#"><a href="#section1">Home</a></a>
+        <a href="#"><a href="#section2">Blog</a></a>
+        <a href="#"><a href="#section3">Work</a></a>
+        <a href="#"><a href="#section4">About</a></a>
         <div class="dot"></div>
     </nav>
 </nav>
@@ -179,8 +179,9 @@
         display: inline-block;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
-        animation: wavy 1s;
+        animation: wavy 2s;
         animation-delay: calc(.1s * var(--i));
+        animation-iteration-count: infinite;
 
     }
 
@@ -205,15 +206,15 @@
     }
 
     body {
-        height: 2000px;
+        height: 2300px;
         background: #272727;
         font-family: "Montserrat", sans-serif;
     }
 
     .navMenu {
-        position: absolute;
+        position: static;
         top: 5%;
-        left: 82%;
+        left: 70%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
@@ -267,7 +268,7 @@
         transform: translateX(200px);
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
-        opacity: 1;
+        opacity: 0,5; /* changed the opacity from 1 to 0,5 */
     }
 
     .navMenu a:nth-child(4):hover~.dot {
@@ -340,7 +341,7 @@
 
     .sticky-toolbar-container .toggle-toolbar.open-toolbar,
     .sticky-toolbar-container .sticky-toolbar {
-        transition: transform 0.2s;
+        transition: transform 0.5s;
     }
 
     .sticky-toolbar-container svg {
